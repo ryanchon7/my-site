@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Ryuzy" />
+    <meta name="author" content="Ryan" />
     <meta name="description" content="Best AI Developer In The World" />
     <link
       rel="shortcut icon"
@@ -16,8 +16,7 @@
       src="https://kit.fontawesome.com/133260cff9.js"
       crossorigin="anonymous"
     ></script>
-  </head>
-  <body>
+
     <!-- header -->
     <header class="header">
       <div class="header__logo">
@@ -26,7 +25,7 @@
       </div>
       <nav class="header__nav">
         <ul class="header__menu">
-          <li><a href="#home" class="header__menu__item active">Home</a></li>
+          <li><a href="#home" class="header__menu__item">Home</a></li>
           <li><a href="#about" class="header__menu__item">Ryan</a></li>
           <li><a href="#skills" class="header__menu__item">Skills</a></li>
           <li><a href="#work" class="header__menu__item">Work</a></li>
@@ -41,9 +40,8 @@
       <section id="home">
         <img class="home__avatar" src="./images/ryanlogo.png" alt="Profile" />
         <h2 class="home__title">
-          Hello! My name is <br /><strong class="home__title--strong"
-            >Ryan</strong
-          >
+          <span id="greetingText">Hello!</span><br />
+          My name is <strong class="home__title--strong">Ryan</strong>
         </h2>
         <p class="home__description">Best Ai Developer In The World.</p>
         <a class="home__contact" href="#contact">Contact</a>
@@ -394,6 +392,15 @@
         ></a>
       </aside>
     </main>
+    <!-- project modal -->
+      <div class="modal" id="projectModal">
+        <div class="modal__inner">
+        <button class="modal__close" id="modalClose">&times;</button>
+        <h3 class="modal__title" id="modalTitle">Project title</h3>
+        <p class="modal__text" id="modalText">Project description</p>
+  </div>
+</div>
+
     <!-- contact -->
     <footer id="contact" class="section">
       <div class="max-container">
@@ -421,5 +428,7 @@
         <p>&copy; Ryan - All rights reserved</p>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
+  </head>
   </body>
 </html>
